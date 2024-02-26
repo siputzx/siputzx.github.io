@@ -6,65 +6,81 @@
 <title>Daftar Rest API Gratis</title>
 <style>
   body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+  }
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
   }
   h1 {
     text-align: center;
-    margin-top: 20px;
     color: #333;
+    margin-bottom: 30px;
   }
   h2 {
     color: #007bff;
-    margin-top: 30px;
+    margin-top: 20px;
   }
   p {
     margin-bottom: 10px;
+    color: #555;
   }
   ul {
     margin: 0;
     padding-left: 20px;
   }
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
   pre {
-    background-color: #f8f9fa;
+    background-color: #f5f5f5;
     padding: 10px;
     border-radius: 5px;
+    overflow-x: auto;
   }
   code {
-    font-family: monospace;
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
   }
 </style>
 </head>
 <body>
-<h1>Daftar Rest API Gratis yang Direkomendasikan</h1>
+<div class="container">
+  <h1>Daftar Rest API Gratis yang Direkomendasikan</h1>
 
-<h2>1. Logo & Thumbnail Generator</h2>
-<p>API ini menyediakan layanan pembuatan logo dan thumbnail dengan akses ke situs-situs seperti Textpro dan Photooxy, serta tambahan fitur pengunduhan.</p>
-<p><a href="https://siputzx.vercel.app">Link Rest API</a></p>
+  <h2>1. Logo & Thumbnail Generator</h2>
+  <p>API ini menyediakan layanan pembuatan logo dan thumbnail dengan akses ke situs-situs seperti Textpro dan Photooxy, serta tambahan fitur pengunduhan.</p>
+  <p><a href="https://siputzx.vercel.app" target="_blank">Link Rest API</a></p>
 
-<h2>2. Gemini Chat & Image</h2>
-<p>Nikmati layanan obrolan dan pemrosesan gambar dari Gemini secara gratis!</p>
-<ul>
-<li>Endpoint Chat: <a href="https://gmni.vercel.app/api/ask?text=">Ini</a></li>
-<li>Endpoint Gambar: <a href="https://gmni.vercel.app/api/img?imageUrl=&prompt=">Ini</a></li>
-</ul>
+  <h2>2. Gemini Chat & Image</h2>
+  <p>Nikmati layanan obrolan dan pemrosesan gambar dari Gemini secara gratis!</p>
+  <ul>
+    <li>Endpoint Chat: <a href="https://gmni.vercel.app/api/ask?text=" target="_blank">Ini</a></li>
+    <li>Endpoint Gambar: <a href="https://gmni.vercel.app/api/img?imageUrl=&prompt=" target="_blank">Ini</a></li>
+  </ul>
 
-<h2>3. ShortURL</h2>
-<p>Sederhana dan praktis, layanan ini memungkinkanmu membuat tautan singkat dengan mudah.</p>
-<p><a href="https://shrtrl.vercel.app/">Link Rest API</a></p>
-<p><strong>Cara Penggunaan:</strong></p>
-<pre><code>const data = { url: "https://putuofc.biz.id" };
+  <h2>3. ShortURL</h2>
+  <p>Sederhana dan praktis, layanan ini memungkinkanmu membuat tautan singkat dengan mudah.</p>
+  <p><a href="https://shrtrl.vercel.app/" target="_blank">Link Rest API</a></p>
+  <p><strong>Cara Penggunaan:</strong></p>
+  <pre><code>const data = { url: "https://putuofc.biz.id" };
 const response = await axios.post('https://shrtrl.vercel.app/', data);
 return response.data;
-</code></pre>
+  </code></pre>
 
-<h2>4. All-in-One Downloader</h2>
-<p>Meskipun belum diperbarui, API ini menjanjikan akses gratis ke berbagai layanan unduhan.</p>
-<p><a href="https://apis-aiodl.vercel.app/">Link Rest API</a></p>
+  <h2>4. All-in-One Downloader</h2>
+  <p>Meskipun belum diperbarui, API ini menjanjikan akses gratis ke berbagai layanan unduhan.</p>
+  <p><a href="https://apis-aiodl.vercel.app/" target="_blank">Link Rest API</a></p>
 
-<p>Nikmati berbagai layanan ini tanpa biaya!</p>
+  <p>Nikmati berbagai layanan ini tanpa biaya!</p>
+</div>
 </body>
 </html>
