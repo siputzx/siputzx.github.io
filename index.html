@@ -36,9 +36,17 @@
     margin: 0;
     padding-left: 20px;
   }
-  a {
-    color: #007bff;
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
     text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  .button:hover {
+    background-color: #0056b3;
   }
   pre {
     background-color: #f5f5f5;
@@ -58,18 +66,18 @@
 
   <h2>1. Logo & Thumbnail Generator</h2>
   <p>API ini menyediakan layanan pembuatan logo dan thumbnail dengan akses ke situs-situs seperti Textpro dan Photooxy, serta tambahan fitur pengunduhan.</p>
-  <p><a href="https://siputzx.vercel.app" target="_blank">Link Rest API</a></p>
+  <a href="https://siputzx.vercel.app" class="button" target="_blank">Kunjungi</a>
 
   <h2>2. Gemini Chat & Image</h2>
   <p>Nikmati layanan obrolan dan pemrosesan gambar dari Gemini secara gratis!</p>
   <ul>
-    <li>Endpoint Chat: <a href="https://gmni.vercel.app/api/ask?text=" target="_blank">Ini</a></li>
-    <li>Endpoint Gambar: <a href="https://gmni.vercel.app/api/img?imageUrl=&prompt=" target="_blank">Ini</a></li>
+    <li>Endpoint Chat: <a href="https://gmni.vercel.app/api/ask?text=" class="button" target="_blank">Kunjungi</a></li>
+    <li>Endpoint Gambar: <a href="https://gmni.vercel.app/api/img?imageUrl=&prompt=" class="button" target="_blank">Kunjungi</a></li>
   </ul>
 
   <h2>3. ShortURL</h2>
   <p>Sederhana dan praktis, layanan ini memungkinkanmu membuat tautan singkat dengan mudah.</p>
-  <p><a href="https://shrtrl.vercel.app/" target="_blank">Link Rest API</a></p>
+  <a href="https://shrtrl.vercel.app/" class="button" target="_blank">Kunjungi</a>
   <p><strong>Cara Penggunaan:</strong></p>
   <pre><code>const data = { url: "https://putuofc.biz.id" };
 const response = await axios.post('https://shrtrl.vercel.app/', data);
@@ -78,7 +86,7 @@ return response.data;
 
   <h2>4. All-in-One Downloader</h2>
   <p>Meskipun belum diperbarui, API ini menjanjikan akses gratis ke berbagai layanan unduhan.</p>
-  <p><a href="https://apis-aiodl.vercel.app/" target="_blank">Link Rest API</a></p>
+  <a href="https://apis-aiodl.vercel.app/" class="button" target="_blank">Kunjungi</a>
 
   <p>Nikmati berbagai layanan ini tanpa biaya!</p>
 </div>
