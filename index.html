@@ -54,6 +54,23 @@
     font-family: 'Courier New', Courier, monospace;
     color: #333;
   }
+  .hashtags {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .hashtags a {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 0 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  .hashtags a:hover {
+    background-color: #0056b3;
+  }
 </style>
 </head>
 <body>
@@ -62,18 +79,18 @@
 
   <h2>1. Logo & Thumbnail Generator</h2>
   <p>API ini menyediakan layanan pembuatan logo dan thumbnail dengan akses ke situs-situs seperti Textpro dan Photooxy, serta tambahan fitur pengunduhan.</p>
-  <a href="https://siputzx.vercel.app" class="button" target="_blank">Logo & Thumbnail Generator</a>
+  <a href="https://siputzx.vercel.app" class="button" target="_blank">Buat Logo & Thumbnail</a>
 
   <h2>2. Gemini Chat & Image</h2>
-  <p>Nikmati layanan obrolan dan pemrosesan gambar dari Gemini secara gratis!</p>
+  <p>Nikmati layanan obrolan dan pemrosesan gambar dari AI Gemini secara gratis!</p>
   <ul>
-    <li><a href="https://gmni.vercel.app/api/ask?text=" class="button" target="_blank">Chat</a></li>
-    <li><a href="https://gmni.vercel.app/api/img?imageUrl=&prompt=" class="button" target="_blank">Image</a></li>
+    <li><a href="https://gmni.vercel.app/api/ask?text=" class="button" target="_blank">Chat Gemini</a></li>
+    <li><a href="https://gmni.vercel.app/api/img?imageUrl=&prompt=" class="button" target="_blank">Proses Gambar Gemini</a></li>
   </ul>
 
   <h2>3. ShortURL</h2>
   <p>Sederhana dan praktis, layanan ini memungkinkanmu membuat tautan singkat dengan mudah.</p>
-  <a href="https://shrtrl.vercel.app/" class="button" target="_blank">ShortURL</a>
+  <a href="https://shrtrl.vercel.app/" class="button" target="_blank">Buat ShortURL</a>
   <p><strong>Cara Penggunaan:</strong></p>
   <pre><code>const data = { url: "https://putuofc.biz.id" };
 const response = await axios.post('https://shrtrl.vercel.app/', data);
@@ -85,6 +102,15 @@ return response.data;
   <a href="https://apis-aiodl.vercel.app/" class="button" target="_blank">All-in-One Downloader</a>
 
   <p>Nikmati berbagai layanan ini tanpa biaya!</p>
+
+  <div class="hashtags">
+    <p>Temukan Kami di:</p>
+    <a href="#">#FreeAPI</a>
+    <a href="#">#GeminiAI</a>
+    <a href="#">#LogoGenerator</a>
+    <a href="#">#ShortURL</a>
+    <a href="#">#Downloader</a>
+  </div>
 </div>
 </body>
 </html>
