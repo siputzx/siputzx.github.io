@@ -36,7 +36,9 @@
     line-height: 1.6;
   }
   .button {
-    display: inline-block;
+    display: block; /* Mengubah tombol menjadi elemen block untuk memisahnya */
+    width: fit-content; /* Lebar sesuai dengan konten */
+    margin: 10px auto; /* Memberi jarak atas dan bawah serta membuat tombol berada di tengah */
     padding: 10px 20px;
     background-color: #17a2b8; /* Warna tombol yang lebih terang */
     color: #fff;
@@ -70,10 +72,8 @@
 
   <h2>2. Gemini Chat & Image</h2>
   <p>Jelajahi dunia kecerdasan buatan dengan Gemini! Mulai dari obrolan interaktif hingga pengolahan gambar canggih, Gemini menyediakan solusi AI yang inovatif untuk kebutuhan pengembangan aplikasi Anda.</p>
-  <ul>
-    <li><a href="https://gmni.vercel.app/api/ask?text=" class="button" target="_blank">Chat Gemini</a></li>
-    <li><a href="https://gmni.vercel.app/api/img?imageUrl=&prompt=" class="button" target="_blank">Proses Gambar Gemini</a></li>
-  </ul>
+  <a href="https://gmni.vercel.app/api/ask?text=" class="button" target="_blank">Chat Gemini</a>
+  <a href="https://gmni.vercel.app/api/img?imageUrl=&prompt=" class="button" target="_blank">Proses Gambar Gemini</a>
 
   <h2>3. ShortURL</h2>
   <p>Perpendek URL Anda dengan cepat dan mudah menggunakan ShortURL! Hemat waktu dan ruang dengan tautan yang ringkas, tetapi tetap kuat dalam menjangkau audiens Anda.</p>
