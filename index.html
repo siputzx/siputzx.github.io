@@ -9,7 +9,7 @@
 <style>
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #f8f9fa; /* Warna latar belakang yang lebih terang */
     margin: 0;
     padding: 0;
   }
@@ -23,7 +23,7 @@
   }
   h1 {
     text-align: center;
-    color: #333;
+    color: #343a40; /* Warna teks yang lebih gelap */
     margin-bottom: 30px;
   }
   h2 {
@@ -38,14 +38,25 @@
   .button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #17a2b8; /* Warna tombol yang lebih terang */
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
+    border: none; /* Menghapus border pada tombol */
+    cursor: pointer; /* Ubah kursor menjadi pointer saat mengarah ke tombol */
   }
   .button:hover {
-    background-color: #0056b3;
+    background-color: #138496; /* Warna tombol saat dihover */
+  }
+  pre {
+    background-color: #f8f9fa; /* Warna latar belakang kode */
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto; /* Membuat scroll horizontal pada kode jika dibutuhkan */
+  }
+  code {
+    color: #c7254e; /* Warna teks kode */
   }
 </style>
 </head>
@@ -54,18 +65,18 @@
   <h1>Daftar Rest API Gratis yang Di Buat Oleh Siputzx Production</h1>
 
   <h2>1. Logo & Thumbnail Generator</h2>
-  <p>Sajikan keindahan logo dan thumbnail dengan mudah. Dapatkan karya visual menarik tanpa ribet!</p>
+  <p>Langsung dapatkan logo dan thumbnail keren untuk proyek Anda! Dengan berbagai pilihan gaya dan motif, Anda dapat menciptakan identitas visual yang sesuai dengan merek Anda tanpa kerumitan.</p>
   <a href="https://siputzx.vercel.app" class="button" target="_blank">Buat Logo & Thumbnail</a>
 
   <h2>2. Gemini Chat & Image</h2>
-  <p>Ambil keuntungan dari kemampuan obrolan dan pengolahan gambar canggih dari AI Gemini, tanpa biaya!</p>
+  <p>Jelajahi dunia kecerdasan buatan dengan Gemini! Mulai dari obrolan interaktif hingga pengolahan gambar canggih, Gemini menyediakan solusi AI yang inovatif untuk kebutuhan pengembangan aplikasi Anda.</p>
   <ul>
     <li><a href="https://gmni.vercel.app/api/ask?text=" class="button" target="_blank">Chat Gemini</a></li>
     <li><a href="https://gmni.vercel.app/api/img?imageUrl=&prompt=" class="button" target="_blank">Proses Gambar Gemini</a></li>
   </ul>
 
   <h2>3. ShortURL</h2>
-  <p>Ringkas tautanmu dengan mudah dan cepat. Hemat waktu, hemat karakter!</p>
+  <p>Perpendek URL Anda dengan cepat dan mudah menggunakan ShortURL! Hemat waktu dan ruang dengan tautan yang ringkas, tetapi tetap kuat dalam menjangkau audiens Anda.</p>
   <a href="https://shrtrl.vercel.app/" class="button" target="_blank">Buat ShortURL</a>
   <p><strong>Cara Penggunaan:</strong></p>
   <pre><code>const data = { url: "https://putuofc.biz.id" };
@@ -74,11 +85,11 @@ return response.data;
   </code></pre>
 
   <h2>4. All-in-One Downloader</h2>
-  <p>Dapatkan akses mudah ke berbagai layanan unduhan, lengkap dengan kenyamanan dan kemudahan penggunaan!</p>
+  <p>Jelajahi berbagai layanan unduhan dengan All-in-One Downloader! Nikmati kenyamanan dalam mengakses berbagai konten yang Anda butuhkan, semua dalam satu tempat yang mudah diakses.</p>
   <a href="https://apis-aiodl.vercel.app/" class="button" target="_blank">All-in-One Downloader</a>
 
   <h2>5. Rest API Campuran</h2>
-  <p>Eksplorasi layanan campuran yang menawarkan kecerdasan buatan, kemampuan pengunduhan, dan kemudahan pencarian dalam satu tempat!</p>
+  <p>Rasakan kekuatan teknologi modern dengan Rest API Campuran! Gabungan kecerdasan buatan, kemampuan pengunduhan, dan kemudahan pencarian membuatnya menjadi pilihan yang sempurna untuk pengembangan aplikasi Anda.</p>
   <a href="https://putz.my.id" class="button" target="_blank">Lihat Rest API</a>
 
   <p>Nikmati berbagai layanan ini tanpa biaya!</p>
