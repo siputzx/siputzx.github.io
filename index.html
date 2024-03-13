@@ -138,8 +138,18 @@
       }
     }
   </style>
+  <script>
+    function exec() {
+      var audio = document.getElementById('audio');
+      audio.play();
+    }
+  </script>
 </head>
-<body>
+<body onload="exec()">
+  <audio id="audio" autoplay>
+    <source src="./AUD-20240220-WA0334.m4a" type="audio/mpeg">
+  </audio>
+  
   <div id="effetsalju"></div>
   <main>
     <div class="container shadow">
