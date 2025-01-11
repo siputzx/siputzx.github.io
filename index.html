@@ -11,68 +11,127 @@
     <meta property="og:description" content="Siputzx adalah seorang developer dan prompt engineer yang berfokus pada pengembangan kecerdasan buatan (AI) untuk menciptakan solusi cerdas dan efisien. Temukan profil bisnis, solusi AI, API, dan sosial media Siputzx.">
     <meta property="og:image" content="https://avatars.githubusercontent.com/u/154863645?v=4">
     <meta property="og:url" content="https://siputzx.my.id">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'sans': ['Manrope', 'system-ui', 'sans-serif']
-                    }
-                }
-            }
-        }
-    </script>
+
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-utilities.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/2.0.5/motion-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/csshake/1.7.0/csshake.min.css">
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.5.5/perfect-scrollbar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"></script>
+
     <style>
-        body { letter-spacing: -0.02em; }
+        body { 
+            letter-spacing: -0.02em;
+            scroll-behavior: smooth;
+        }
         .soft-shadow { box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03); }
         .soft-border { border: 1px solid rgba(0,0,0,0.05); }
+        
+        /* Animation Classes */
+        .fade-in { animation: fadeIn 1s ease-in; }
+        .slide-up { animation: slideUp 0.5s ease-out; }
+        .bounce-in { animation: bounceIn 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+        
+        /* Hover Effects */
+        .hover-grow { transition: transform 0.3s ease; }
+        .hover-grow:hover { transform: scale(1.05); }
+        
+        /* Responsive Improvements */
+        @media (max-width: 640px) {
+            .container { padding: 1rem; }
+            .grid { gap: 1rem; }
+        }
+        
+        /* Smooth Transitions */
+        * { transition: all 0.3s ease-in-out; }
+        
+        /* Perfect Scrollbar Customization */
+        .ps__rail-y { background-color: transparent !important; }
+        
+        /* Custom Animations */
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes bounceIn {
+            0% { transform: scale(0.3); opacity: 0; }
+            50% { transform: scale(1.05); }
+            70% { transform: scale(0.9); }
+            100% { transform: scale(1); opacity: 1; }
+        }
     </style>
 </head>
-<body class="bg-white dark:bg-neutral-900 text-neutral-800 dark:text-neutral-100 min-h-screen font-sans antialiased">
+<body class="bg-white dark:bg-neutral-900 text-neutral-800 dark:text-neutral-100 min-h-screen font-sans antialiased" data-aos-easing="ease-in-out" data-aos-duration="800" data-aos-delay="0">
     <div class="container mx-auto px-4 max-w-xl py-12">
-        <div id="theme-toggle" class="fixed top-4 right-4 z-50">
-            <button class="p-2 bg-neutral-100 dark:bg-neutral-800 rounded-full soft-shadow hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-all">
+        <div id="theme-toggle" class="fixed top-4 right-4 z-50 animate__animated animate__fadeIn">
+            <button class="p-2 bg-neutral-100 dark:bg-neutral-800 rounded-full soft-shadow hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-all hvr-grow">
                 <i id="theme-icon" class="fas fa-moon dark:fa-sun text-neutral-600 dark:text-neutral-300"></i>
             </button>
         </div>
 
         <main>
-            <section class="text-center mb-10">
+            <section class="text-center mb-10" data-aos="fade-up">
                 <img 
                     src="https://avatars.githubusercontent.com/u/154863645?v=4" 
                     alt="I Putu Indrawan" 
-                    class="w-24 h-24 mx-auto rounded-full mb-4 object-cover soft-border soft-shadow"
+                    class="w-24 h-24 mx-auto rounded-full mb-4 object-cover soft-border soft-shadow lazyload hover-grow"
+                    data-aos="zoom-in"
                 >
                 
-                <h1 class="text-2xl font-medium tracking-tight text-neutral-800 dark:text-neutral-200">
-                    I Putu Indrawan
+                <h1 class="text-2xl font-medium tracking-tight text-neutral-800 dark:text-neutral-200 slide-up">
+                    <span class="typed"></span>
                 </h1>
-                <p class="text-sm text-neutral-500 dark:text-neutral-400 font-light">
+                <p class="text-sm text-neutral-500 dark:text-neutral-400 font-light fade-in">
                     Prompt Engineer
                 </p>
 
-                <div class="flex justify-center space-x-4 mt-4">
-                    <a href="mailto:siputzx.id@gmail.com" class="text-neutral-400 hover:text-neutral-600 dark:text-neutral-500 dark:hover:text-neutral-300 transition-colors">
+                <div class="flex justify-center space-x-4 mt-4 bounce-in">
+                    <a href="mailto:siputzx.id@gmail.com" class="text-neutral-400 hover:text-neutral-600 dark:text-neutral-500 dark:hover:text-neutral-300 transition-colors hvr-bounce-in">
                         <i class="fas fa-envelope text-lg"></i>
                     </a>
-                    <a href="https://linkedin.com/in/siputzx" class="text-neutral-400 hover:text-neutral-600 dark:text-neutral-500 dark:hover:text-neutral-300 transition-colors">
+                    <a href="https://linkedin.com/in/siputzx" class="text-neutral-400 hover:text-neutral-600 dark:text-neutral-500 dark:hover:text-neutral-300 transition-colors hvr-bounce-in">
                         <i class="fab fa-linkedin text-lg"></i>
                     </a>
-                    <a href="https://github.com/siputzx" class="text-neutral-400 hover:text-neutral-600 dark:text-neutral-500 dark:hover:text-neutral-300 transition-colors">
+                    <a href="https://github.com/siputzx" class="text-neutral-400 hover:text-neutral-600 dark:text-neutral-500 dark:hover:text-neutral-300 transition-colors hvr-bounce-in">
                         <i class="fab fa-github text-lg"></i>
                     </a>
-                    <a href="https://twitter.com/siputzx" class="text-neutral-400 hover:text-neutral-600 dark:text-neutral-500 dark:hover:text-neutral-300 transition-colors">
+                    <a href="https://twitter.com/siputzx" class="text-neutral-400 hover:text-neutral-600 dark:text-neutral-500 dark:hover:text-neutral-300 transition-colors hvr-bounce-in">
                         <i class="fab fa-twitter text-lg"></i>
                     </a>
                 </div>
             </section>
 
-            <section class="mb-8">
-                <div id="online-identities" class="bg-neutral-50 dark:bg-neutral-800 rounded-lg p-5 soft-shadow soft-border">
+            <section class="mb-8" data-aos="fade-up" data-aos-delay="100">
+                <div id="online-identities" class="bg-neutral-50 dark:bg-neutral-800 rounded-lg p-5 soft-shadow soft-border hover-grow">
                     <h2 class="text-base font-medium mb-3 text-neutral-600 dark:text-neutral-300 border-b border-neutral-200 dark:border-neutral-700 pb-2">
                         Online Identities
                     </h2>
@@ -81,7 +140,7 @@
             </section>
 
             <div class="grid md:grid-cols-2 gap-6">
-                <section class="bg-neutral-50 dark:bg-neutral-800 rounded-lg p-5 soft-shadow soft-border">
+                <section class="bg-neutral-50 dark:bg-neutral-800 rounded-lg p-5 soft-shadow soft-border hover-grow" data-aos="fade-right" data-aos-delay="200">
                     <h2 class="text-base font-medium mb-3 text-neutral-600 dark:text-neutral-300 border-b border-neutral-200 dark:border-neutral-700 pb-2">
                         About
                     </h2>
@@ -91,21 +150,21 @@
                     </p>
                 </section>
 
-                <section class="bg-neutral-50 dark:bg-neutral-800 rounded-lg p-5 soft-shadow soft-border">
+                <section class="bg-neutral-50 dark:bg-neutral-800 rounded-lg p-5 soft-shadow soft-border hover-grow" data-aos="fade-left" data-aos-delay="300">
                     <h2 class="text-base font-medium mb-3 text-neutral-600 dark:text-neutral-300 border-b border-neutral-200 dark:border-neutral-700 pb-2">
                         Personal Information
                     </h2>
                     <div id="personal-info-container" class="flex flex-wrap gap-2"></div>
                 </section>
 
-                <section class="bg-neutral-50 dark:bg-neutral-800 rounded-lg p-5 soft-shadow soft-border">
+                <section class="bg-neutral-50 dark:bg-neutral-800 rounded-lg p-5 soft-shadow soft-border hover-grow" data-aos="fade-right" data-aos-delay="400">
                     <h2 class="text-base font-medium mb-3 text-neutral-600 dark:text-neutral-300 border-b border-neutral-200 dark:border-neutral-700 pb-2">
                         Skills
                     </h2>
                     <div id="skills-container" class="flex flex-wrap gap-2"></div>
                 </section>
 
-                <section class="bg-neutral-50 dark:bg-neutral-800 rounded-lg p-5 soft-shadow soft-border">
+                <section class="bg-neutral-50 dark:bg-neutral-800 rounded-lg p-5 soft-shadow soft-border hover-grow" data-aos="fade-left" data-aos-delay="500">
                     <h2 class="text-base font-medium mb-3 text-neutral-600 dark:text-neutral-300 border-b border-neutral-200 dark:border-neutral-700 pb-2">
                         Projects
                     </h2>
@@ -114,12 +173,32 @@
             </div>
         </main>
 
-        <footer class="text-center text-xs text-neutral-400 dark:text-neutral-500 mt-10">
+        <footer class="text-center text-xs text-neutral-400 dark:text-neutral-500 mt-10 fade-in" data-aos="fade-up" data-aos-delay="600">
             © 2024 I Putu Indrawan
         </footer>
     </div>
 
     <script>
+        // Initialize libraries
+        AOS.init();
+        new WOW().init();
+        
+        const typed = new Typed('.typed', {
+            strings: ['I Putu Indrawan', 'Siputzx', 'AI Developer'],
+            typeSpeed: 50,
+            backSpeed: 30,
+            backDelay: 2000,
+            loop: true
+        });
+
+        const ps = new PerfectScrollbar('body');
+        
+        const scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 800,
+            speedAsDuration: true,
+            easing: 'easeInOutQuart'
+        });
+
         const THEME_TOGGLE = document.getElementById('theme-toggle');
         const THEME_ICON = document.getElementById('theme-icon');
         const HTML_ELEMENT = document.documentElement;
@@ -152,7 +231,7 @@
             { icon: 'fa-user-secret', text: 'Nolep' },
             { icon: 'fa-code', text: 'Coding' },
             { icon: 'fa-wallet', text: 'Empty' }
-          ]
+        ]
 
         const IDENTITIES = [
             { name: "Siputzx", link: "https://github.com/siputzx" },
@@ -200,12 +279,20 @@
             const isDark = HTML_ELEMENT.classList.contains('dark');
             THEME_ICON.classList.toggle('fa-moon', !isDark);
             THEME_ICON.classList.toggle('fa-sun', isDark);
+            
+            // Add animation
+            THEME_ICON.classList.add('animate__animated', 'animate__flipInY');
+            setTimeout(() => {
+                THEME_ICON.classList.remove('animate__animated', 'animate__flipInY');
+            }, 1000);
         }
 
         function renderPersonalInfo() {
-            PERSONAL_INFO.forEach(info => {
+            PERSONAL_INFO.forEach((info, index) => {
                 const span = document.createElement('span');
-                span.className = 'bg-neutral-200 dark:bg-neutral-700 text-neutral-600 dark:text-neutral-300 px-2 py-1 rounded-md text-xs transition-all hover:bg-neutral-300 dark:hover:bg-neutral-600 inline-flex items-center gap-2';
+                span.className = 'bg-neutral-200 dark:bg-neutral-700 text-neutral-600 dark:text-neutral-300 px-2 py-1 rounded-md text-xs transition-all hover:bg-neutral-300 dark:hover:bg-neutral-600 inline-flex items-center gap-2 hvr-grow';
+                span.setAttribute('data-aos', 'fade-up');
+                span.setAttribute('data-aos-delay', `${index * 100}`);
                 
                 const icon = document.createElement('i');
                 icon.className = `fas ${info.icon} text-neutral-500 dark:text-neutral-400`;
@@ -217,33 +304,53 @@
                 span.appendChild(icon);
                 span.appendChild(text);
                 PERSONAL_INFO_CONTAINER.appendChild(span);
+
+                // Add tooltip
+                span.setAttribute('data-hint', info.text || info.getValue());
+                span.classList.add('hint--top');
             });
         }
 
         function renderIdentities() {
-            IDENTITIES.forEach(identity => {
+            IDENTITIES.forEach((identity, index) => {
                 const a = document.createElement('a');
                 a.href = identity.link;
                 a.target = "_blank";
-                a.className = 'bg-neutral-200 dark:bg-neutral-700 text-neutral-600 dark:text-neutral-300 px-2 py-1 rounded-md text-xs transition-all hover:bg-neutral-300 dark:hover:bg-neutral-600';
+                a.className = 'bg-neutral-200 dark:bg-neutral-700 text-neutral-600 dark:text-neutral-300 px-2 py-1 rounded-md text-xs transition-all hover:bg-neutral-300 dark:hover:bg-neutral-600 hvr-bounce-in';
+                a.setAttribute('data-aos', 'zoom-in');
+                a.setAttribute('data-aos-delay', `${index * 100}`);
                 a.textContent = identity.name;
+                
+                // Add tooltip
+                a.setAttribute('data-hint', `Visit ${identity.name}'s profile`);
+                a.classList.add('hint--top');
+                
                 IDENTITIES_CONTAINER.appendChild(a);
             });
         }
 
         function renderSkills() {
-            SKILLS.forEach(skill => {
+            SKILLS.forEach((skill, index) => {
                 const span = document.createElement('span');
-                span.className = 'bg-neutral-200 dark:bg-neutral-700 text-neutral-600 dark:text-neutral-300 px-2 py-1 rounded-md text-xs transition-all hover:bg-neutral-300 dark:hover:bg-neutral-600';
+                span.className = 'bg-neutral-200 dark:bg-neutral-700 text-neutral-600 dark:text-neutral-300 px-2 py-1 rounded-md text-xs transition-all hover:bg-neutral-300 dark:hover:bg-neutral-600 hvr-grow';
+                span.setAttribute('data-aos', 'fade-right');
+                span.setAttribute('data-aos-delay', `${index * 100}`);
                 span.textContent = skill;
+                
+                // Add tooltip
+                span.setAttribute('data-hint', `Skilled in ${skill}`);
+                span.classList.add('hint--top');
+                
                 SKILLS_CONTAINER.appendChild(span);
             });
         }
 
         function renderProjects() {
-            PROJECTS.forEach(project => {
+            PROJECTS.forEach((project, index) => {
                 const div = document.createElement('div');
-                div.className = 'bg-neutral-200 dark:bg-neutral-700 text-neutral-600 dark:text-neutral-300 p-3 rounded-md text-xs transition-all hover:bg-neutral-300 dark:hover:bg-neutral-600';
+                div.className = 'bg-neutral-200 dark:bg-neutral-700 text-neutral-600 dark:text-neutral-300 p-3 rounded-md text-xs transition-all hover:bg-neutral-300 dark:hover:bg-neutral-600 hvr-grow';
+                div.setAttribute('data-aos', 'fade-up');
+                div.setAttribute('data-aos-delay', `${index * 100}`);
                 
                 const titleLink = document.createElement('a');
                 titleLink.href = project.link;
@@ -257,16 +364,34 @@
                 div.appendChild(titleLink);
                 div.appendChild(description);
                 
+                // Add tooltip
+                div.setAttribute('data-hint', `View ${project.name}`);
+                div.classList.add('hint--left');
+                
                 PROJECTS_CONTAINER.appendChild(div);
             });
         }
 
+        // Initialize parallax
+        const scene = document.querySelectorAll('.hover-grow');
+        scene.forEach(element => {
+            new Parallax(element, {
+                relativeInput: true,
+                hoverOnly: true,
+                pointerEvents: true
+            });
+        });
+
+        // Initialize event listeners
         document.addEventListener('DOMContentLoaded', () => {
             initializeTheme();
             renderPersonalInfo();
             renderIdentities();
             renderSkills();
             renderProjects();
+            
+            // Initialize lazysizes
+            lazySizes.init();
         });
 
         THEME_TOGGLE.addEventListener('click', () => {
@@ -274,7 +399,30 @@
             const isDark = HTML_ELEMENT.classList.contains('dark');
             localStorage.setItem('theme', isDark ? 'dark' : 'light');
             updateThemeIcon();
+            
+            // Add page transition
+            document.body.style.opacity = '0';
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 200);
         });
+
+        // Add scroll animations
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY;
+            document.body.style.backgroundPositionY = -(scrolled * 0.5) + 'px';
+        });
+
+        // Initialize GSAP animations
+        gsap.from("main", {
+            duration: 1,
+            y: 60,
+            opacity: 0,
+            ease: "power3.out"
+        });
+
+        // Add clipboard functionality
+        new ClipboardJS('.hvr-grow');
     </script>
 </body>
 </html>
