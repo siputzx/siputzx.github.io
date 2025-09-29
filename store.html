@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bot Hosting</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+    
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+    
+    body {
+      background: #ffffff;
+      color: #000;
+      padding: 60px 20px;
+    }
+    
+    .container {
+      max-width: 1200px;
+    }
+    
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 60px;
+      color: #000;
+    }
+    
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    
+    .card {
+      background: #fff;
+      border: 1px solid #e5e5e5;
+      padding: 32px 24px;
+      transition: all 0.3s ease;
+    }
+    
+    .card:hover {
+      border-color: #10b981;
+      box-shadow: 0 4px 12px rgba(16, 185, 129, 0.1);
+    }
+    
+    .name {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #999;
+      margin-bottom: 16px;
+    }
+    
+    .price {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+      color: #000;
+    }
+    
+    .specs {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 24px 0;
+    }
+    
+    .specs li {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 0;
+      border-bottom: 1px solid #f5f5f5;
+      font-size: 0.9rem;
+    }
+    
+    .specs li:last-child {
+      border-bottom: none;
+    }
+    
+    .label {
+      color: #999;
+    }
+    
+    .value {
+      color: #000;
+      font-weight: 600;
+    }
+    
+    .btn {
+      width: 100%;
+      background: #10b981;
+      color: #fff;
+      border: none;
+      padding: 14px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+    }
+    
+    .btn:hover {
+      background: #059669;
+      color: #fff;
+    }
+    
+    .popular {
+      position: relative;
+    }
+    
+    .popular::before {
+      content: 'POPULAR';
+      position: absolute;
+      top: -1px;
+      right: -1px;
+      background: #10b981;
+      color: #fff;
+      padding: 4px 12px;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+      
+      .price {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Bot Hosting</h1>
+  
+  <div class="grid">
+    
+    <div class="card">
+      <div class="name">Trial</div>
+      <div class="price">3K</div>
+      <ul class="specs">
+        <li><span class="label">RAM</span><span class="value">1GB</span></li>
+        <li><span class="label">CPU</span><span class="value">30%</span></li>
+        <li><span class="label">Disk</span><span class="value">2GB</span></li>
+      </ul>
+      <a href="https://wa.me/6285658939117?text=Halo,%20saya%20ingin%20order%20paket%20*TRIAL*%0A%0ASpesifikasi:%0ARAM:%201GB%0ACPU:%2030%%0ADisk:%201GB%0AHarga:%20Rp%203.000" class="btn">Pesan via WhatsApp</a>
+    </div>
+
+    <div class="card">
+      <div class="name">Mini</div>
+      <div class="price">5K</div>
+      <ul class="specs">
+        <li><span class="label">RAM</span><span class="value">3GB</span></li>
+        <li><span class="label">CPU</span><span class="value">50%</span></li>
+        <li><span class="label">Disk</span><span class="value">6GB</span></li>
+      </ul>
+      <a href="https://wa.me/6285658939117?text=Halo,%20saya%20ingin%20order%20paket%20*MINI*%0A%0ASpesifikasi:%0ARAM:%203GB%0ACPU:%2050%%0ADisk:%205GB%0AHarga:%20Rp%205.000" class="btn">Pesan via WhatsApp</a>
+    </div>
+
+    <div class="card popular">
+      <div class="name">Standar</div>
+      <div class="price">15K</div>
+      <ul class="specs">
+        <li><span class="label">RAM</span><span class="value">6GB</span></li>
+        <li><span class="label">CPU</span><span class="value">100%</span></li>
+        <li><span class="label">Disk</span><span class="value">11GB</span></li>
+      </ul>
+      <a href="https://wa.me/6285658939117?text=Halo,%20saya%20ingin%20order%20paket%20*STANDAR*%0A%0ASpesifikasi:%0ARAM:%206GB%0ACPU:%20100%%0ADisk:%2010GB%0AHarga:%20Rp%2015.000" class="btn">Pesan via WhatsApp</a>
+    </div>
+
+    <div class="card">
+      <div class="name">Pro</div>
+      <div class="price">20K</div>
+      <ul class="specs">
+        <li><span class="label">RAM</span><span class="value">7GB</span></li>
+        <li><span class="label">CPU</span><span class="value">120%</span></li>
+        <li><span class="label">Disk</span><span class="value">13GB</span></li>
+      </ul>
+      <a href="https://wa.me/6285658939117?text=Halo,%20saya%20ingin%20order%20paket%20*PRO*%0A%0ASpesifikasi:%0ARAM:%207GB%0ACPU:%20120%%0ADisk:%2012GB%0AHarga:%20Rp%2020.000" class="btn">Pesan via WhatsApp</a>
+    </div>
+
+    <div class="card">
+      <div class="name">Bisnis</div>
+      <div class="price">25K</div>
+      <ul class="specs">
+        <li><span class="label">RAM</span><span class="value">8GB</span></li>
+        <li><span class="label">CPU</span><span class="value">140%</span></li>
+        <li><span class="label">Disk</span><span class="value">16GB</span></li>
+      </ul>
+      <a href="https://wa.me/6285658939117?text=Halo,%20saya%20ingin%20order%20paket%20*BISNIS*%0A%0ASpesifikasi:%0ARAM:%208GB%0ACPU:%20140%%0ADisk:%2015GB%0AHarga:%20Rp%2025.000" class="btn">Pesan via WhatsApp</a>
+    </div>
+
+    <div class="card">
+      <div class="name">Sultan</div>
+      <div class="price">40K</div>
+      <ul class="specs">
+        <li><span class="label">RAM</span><span class="value">14GB</span></li>
+        <li><span class="label">CPU</span><span class="value">200%</span></li>
+        <li><span class="label">Disk</span><span class="value">31GB</span></li>
+      </ul>
+      <a href="https://wa.me/6285658939117?text=Halo,%20saya%20ingin%20order%20paket%20*SULTAN*%0A%0ASpesifikasi:%0ARAM:%2014GB%0ACPU:%20200%%0ADisk:%2030GB%0AHarga:%20Rp%2040.000" class="btn">Pesan via WhatsApp</a>
+    </div>
+
+    <div class="card">
+      <div class="name">Overkill</div>
+      <div class="price">50K</div>
+      <ul class="specs">
+        <li><span class="label">RAM</span><span class="value">16GB</span></li>
+        <li><span class="label">CPU</span><span class="value">250%</span></li>
+        <li><span class="label">Disk</span><span class="value">41GB</span></li>
+      </ul>
+      <a href="https://wa.me/6285658939117?text=Halo,%20saya%20ingin%20order%20paket%20*OVERKILL*%0A%0ASpesifikasi:%0ARAM:%2016GB%0ACPU:%20250%%0ADisk:%2040GB%0AHarga:%20Rp%2050.000" class="btn">Pesan via WhatsApp</a>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
